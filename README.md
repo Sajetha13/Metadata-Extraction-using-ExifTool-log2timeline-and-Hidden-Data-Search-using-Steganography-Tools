@@ -1,4 +1,5 @@
 # Metadata-Extraction-using-ExifTool-log2timeline-and-Hidden-Data-Search-using-Steganography-Tools
+
 ## AIM:
 To extract metadata, perform timeline analysis, and search for hidden data using forensic tools like ExifTool, log2timeline, and steganography detection tools.
 ## REQUIREMENTS
@@ -46,6 +47,12 @@ sudo apt install exiftool -y
 ```bash
 exiftool image.jpg
 ```
+
+
+<img width="711" height="513" alt="Screenshot 2025-09-20 195115" src="https://github.com/user-attachments/assets/589896cd-a6c9-4c36-80a7-103a2fe68ac4" />
+
+
+
 - **Batch process a folder:**
 ```bash
 exiftool -r /path/to/folder
@@ -73,12 +80,14 @@ sudo apt install steghide -y
 steghide embed -cf /home/kali/Downloads/wallpaper.jpg -ef /home/kali/Downloads/secret.txt
 ```
 
+<img width="749" height="74" alt="Screenshot 2025-09-20 195123" src="https://github.com/user-attachments/assets/8459fa22-27e4-464a-b8f1-a6f37acd3967" />
 
 - **Extract hidden data:**
 ```
 steghide extract -sf hidden.jpg
 
 ```
+<img width="746" height="46" alt="Screenshot 2025-09-20 195133" src="https://github.com/user-attachments/assets/aaa2b5ea-b5de-4464-9bda-24b2f59db7c9" />
 
 
 ### Using binwalk – for file analysis
@@ -89,6 +98,7 @@ binwalk suspicious.jpg
 ```bash
 binwalk /home/kali/Downloads/wallpaper.jpg
 ```
+<img width="730" height="428" alt="Screenshot 2025-09-20 195147" src="https://github.com/user-attachments/assets/e61fad7d-90fb-4331-b962-f8681d94fbeb" />
 
 
 ## RESULT:
